@@ -1,0 +1,59 @@
+.section-heading {
+  --max_font: var(--ck-fontSizes-4xl);
+  --min_font: var(--ck-fontSizes-4xl);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: var(--ck-fontWeights-bold);
+  margin-bottom: var(--ck-space-6);
+}
+
+.card__category {
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
+  color: var(--ck-colors-blackAlpha-600);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+}
+
+.card__name {
+  --max_font: var(--ck-fontSizes-md);
+  --min_font: var(--ck-fontSizes-md);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
+
+.card__price {
+  --max_font: var(--ck-fontSizes-md);
+  --min_font: var(--ck-fontSizes-md);
+  color: var(--ck-colors-primary-0);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
+
+//.section-heading-label {
+//  --max_font: calc(3.75 * var(--font-size-base));
+//  --min_font: calc(1.5 * var(--font-size-base));
+//  //font-size: var(--max_font);
+//  font-size: clamp(var(--min_font), var(--min_font) + 1.5vw, var(--max_font));
+//  text-transform: uppercase;
+//  line-height: normal;
+//}
+//
+//.section-subtitle {
+//  font-size: calc(1.875 * var(--font-size-base));
+//  line-height: 1;
+//}
+//
+//.nav-text {
+//  font-size: calc(1.875 * var(--font-size-base));
+//  line-height: normal;
+//}
+//
+//.body-text {
+//  font-size: calc(1.25 * var(--font-size-base));
+//}
+//
+//.supplement-text {
+//  font-size: calc(0.75 * var(--font-size-base));
+//}
+
+
+

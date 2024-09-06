@@ -1,0 +1,14 @@
+.card-grid {
+  display: grid;
+  gap: var(--ck-space-8);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  --first-wrap: calc(400px + var(--ck-space-8));
+  .card {
+    display: flex;
+    flex-direction: column;
+    img {
+      border-radius: var(--ck-radii-xl);
+      margin-bottom: var(--ck-space-8);
+    }
+  }
+}

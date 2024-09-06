@@ -1,0 +1,9 @@
+@font-face{
+  font-family: "RedHat";
+  src:local("RedHat-Regular"), url('../../assets/fonts/RedHatText-VariableFont_wght.ttf');
+  //url('../../assets/fonts/RedHatText-Italic-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: "RedHat", sans-serif;
+}

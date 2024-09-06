@@ -1,0 +1,96 @@
+:root {
+  //colors
+  //--color-surface-0: #070707;
+  //--color-surface-100:  #121212;
+  //--color-surface-200:  #282828;
+  //--color-surface-300:  #3f3f3f;
+  //--color-surface-400:  #575757;
+  //--color-surface-500:  #717171;
+  //--color-surface-600:  #8b8b8b;
+
+
+  --color-surface-white: #FFFFFF;
+  --color-surface-white-7P: rgba(255, 255, 255, 0.07);
+
+
+  --color-surface-0: #E7E6DD;
+  --color-surface-0-30P: rgba(232, 231, 223, 0.3);
+  --color-surface-100: #B9B8B1;
+  --color-surface-200: #94938E;
+  --color-surface-300: #767672;
+  --color-surface-400: #5E5E5B;
+  --color-surface-500: #4B4B49;
+  --color-surface-600: #3C3C3A;
+  --color-surface-700: #30302E;
+  --color-surface-800: #262625;
+  --color-surface-900: #1E1E1E;
+  --color-surface-1000: Black;
+  --color-surface-1000-50P: rgba(0, 0, 0, 0.5);
+
+  --color-site-background: #16053E;
+  //--color-welcome-section-gr2: rgba(0,10,51,1);
+  //--gradient-welcome-section: radial-gradient(circle, var(--color-welcome-section-gr2) 0%, var(--color-welcome-section-gr1) 100%);
+
+
+
+  --color-primary: #29F2FF;
+  --color-primary-10P: rgba(41, 241, 255, 0.1);
+  --color-secondary: #EF18F3;
+  --color-tercery: #C0B230;
+  --color-tercery-10P: rgba(41, 241, 255, 0.1);
+
+  --color-text-grey: #b6b6b6;
+
+  --success-color: #00ad1d;
+  --caution-color: #e77702;
+
+
+  --color-warning: #f18a78;
+
+  --gradient-contact: linear-gradient(45deg, rgba(239,24,243,0.28) 0%, rgba(41,242,255,0.38) 100%);
+  --gradient-wave: linear-gradient(45deg, rgba(239,24,243,1) 0%, rgba(41,242,255,1) 100%);
+
+  //font-sizes
+  --font-size-base: 1rem;
+  --font-size-h1: calc(2.125 * var(--font-size-base));
+  --font-size-h2: calc(1.875 * var(--font-size-base));
+  --font-size-h3: calc(1.5 * var(--font-size-base));
+  --font-size-h4: calc(1.25 * var(--font-size-base));
+  --font-size-h5: calc(1.125 * var(--font-size-base));
+  --font-size-h6: calc(1 * var(--font-size-base));
+  --font-size-s: calc(0.8 * var(--font-size-base));
+  --font-size-xs: calc(0.6 * var(--font-size-base));
+  --font-size-xxs: calc(0.4 * var(--font-size-base));
+  --font-size-kilo: calc(3 * var(--font-size-base));
+  --font-size-mega: calc(4 * var(--font-size-base));
+  --font-size-giga: calc(5 * var(--font-size-base));
+  //h1 {font-size: var(--font-size-h1)}
+  //h2 {font-size: var(--font-size-h2)}
+  //h3 {font-size: var(--font-size-h3)}
+  //h4 {font-size: var(--font-size-h4)}
+  //h5 {font-size: var(--font-size-h5)}
+  //h6 {font-size: var(--font-size-h6)}
+
+
+  //spacings
+  --space-unit: 1rem;
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs:  calc(0.375 * var(--space-unit));
+  --space-xs:   calc(0.5 * var(--space-unit));
+  --space-sm:   calc(0.75 * var(--space-unit));
+  --space-md:   calc(1.25 * var(--space-unit));
+  --space-lg:   calc(2 * var(--space-unit));
+  --space-xl:   calc(3.25 * var(--space-unit));
+  --space-xxl:  calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
+
+  --outer-section-margin: var(--space-lg);
+  --content-section-margin: var(--space-md);
+
+
+  //shadows
+  --fluid-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11);
+
+
+
+}
