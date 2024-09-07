@@ -33,6 +33,17 @@ export const theme = extendTheme({
     },
     primary: {
       0: "#c63b0e",
+      50: "#FEF4F1",
+      100: "#FDE5DE",
+      200: "#FAC8B8",
+      300: "#F7A78D",
+      400: "#F2744A",
+      'standard-500': "#C63B0E",
+      600: "#B0350C",
+      700: "#9D300B",
+      800: "#812709",
+      900: "#5B1B06",
+      950: "#471605"
     }
   },
   fontSizes: {

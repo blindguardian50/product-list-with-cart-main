@@ -6,24 +6,24 @@
   margin-bottom: var(--ck-space-6);
 }
 
-.card__category {
+.font-pale-small, .shopping-card__category {
   --max_font: var(--ck-fontSizes-sm);
   --min_font: var(--ck-fontSizes-sm);
   color: var(--ck-colors-blackAlpha-600);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
 }
 
-.card__name {
+.font-thick-middle, .shopping-card__name, .shopping-card__button--unselected {
   --max_font: var(--ck-fontSizes-md);
   --min_font: var(--ck-fontSizes-md);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
 }
 
-.card__price {
+.font-thick-middle-primary, .shopping-card__price {
   --max_font: var(--ck-fontSizes-md);
   --min_font: var(--ck-fontSizes-md);
-  color: var(--ck-colors-primary-0);
+  color: var(--ck-colors-primary-standard-500);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
 }

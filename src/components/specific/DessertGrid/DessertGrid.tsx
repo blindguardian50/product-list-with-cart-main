@@ -1,6 +1,7 @@
 import {useQuery} from "@tanstack/react-query";
 import './DessertGrid.css'
 import {useBreakpointValue} from "@chakra-ui/react";
+import {ShoppingCard} from "../../reusable/ShoppingCard/ShoppingCard.tsx";
 
 type Dessert = {
   category: string,
@@ -20,7 +21,7 @@ export function DessertGrid() {
   const bgColor = useBreakpointValue<DeviceResolution>({
     base: 'mobile', // Mobile
     sm: 'tablet', // Tablets and small desktops
-    lg: 'desktop', // Tablets and small desktops
+    lg: 'desktop', // large desktops
   });
 
   const {isPending, error, data} = useQuery<Dessert[]>({
@@ -39,22 +40,20 @@ export function DessertGrid() {
 
   function getImageUrl(name: string) {
     //only absolut Paths for URL
-    return  new URL( name.substring(1), import.meta.url).href;
+    return new URL(name.substring(1), import.meta.url).href;
   }
 
   return <div className={'card-grid'}>
     {data.map(dessert => {
-      const price = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(dessert.price)
+      const price = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(dessert.price)
       const device = bgColor ?? 'mobile'
-      console.log(device, bgColor)
-      console.log(dessert.price)
-      return <div className={'card'}>
-        <img src={`${getImageUrl(dessert.image[device])}`} alt="THis is Image"/>
-        <p className={'card__category'}>{dessert.category}</p>
-        <h3 className={'card__name'}>{dessert.name}</h3>
-        <p className={'card__price'}>{price}</p>
-        {/*<div className={'cart__button--inactive'}>{dessert.price}</div>*/}
-      </div>
-    })}
+      return <ShoppingCard
+        image={<img src={`${getImageUrl(dessert.image[device])}`} alt={`Image of a ${dessert.category}`}/>}
+        category={dessert.category}
+        name={dessert.name}
+        price={price}
+      />
+    })
+    }
   </div>
 }

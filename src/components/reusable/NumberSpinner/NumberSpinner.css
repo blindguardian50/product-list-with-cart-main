@@ -1,0 +1,19 @@
+.number-spinner {
+  display: flex;
+  justify-content: space-between;
+
+  .number-spinner__plus-button {
+    translate: 50%;
+  }
+
+  .number-spinner__minus-button {
+    translate: -50%;
+  }
+
+  .number-spinner__plus-button, .number-spinner__minus-button {
+    transition: scale 150ms linear;
+    &:active {
+      scale: 0.9;
+    }
+  }
+}

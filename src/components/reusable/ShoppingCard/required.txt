@@ -1,0 +1,12 @@
+Define Font Styles:
+
+.shopping-card__category
+.shopping-card__name
+.shopping-card__price
+
+
+Define CSS Variables:
+
+all standard chakra ui +
+border-radius: var(--ck-radii-xl);
+margin-bottom: var(--ck-space-8);
