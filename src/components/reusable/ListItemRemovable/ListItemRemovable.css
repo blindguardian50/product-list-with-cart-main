@@ -1,0 +1,33 @@
+.list-item--removable {
+  display: grid;
+  grid-template-areas:
+    'list-name list-remove'
+    'list-details list-remove';
+  grid-template-columns: 1fr auto;
+  padding-bottom: var(--ck-space-4);
+  border-bottom: var(--ck-borders-1px) var(--ck-colors-blackAlpha-200);
+  .list-item__name {
+    grid-area: list-name;
+  }
+  .list-item__details {
+    display: flex;
+    gap: var(--ck-space-4);
+    grid-area: list-details;
+  }
+  .list-item__remove {
+    grid-area: list-remove;
+    svg {
+      color: var(--ck-colors-blackAlpha-600);
+      height: var(--ck-sizes-5);
+      width: auto;
+      transition: color 100ms linear;
+      &:active {
+        color: var(--ck-colors-black);
+      }
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .list-item__remove svg:hover { color: var(--ck-colors-black); }
+}

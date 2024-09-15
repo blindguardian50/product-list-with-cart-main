@@ -1,4 +1,5 @@
 :root {
+  --chakra-ring-inset: var(--chakra-empty, );
   --chakra-ring-offset-width: 0px;
   --chakra-ring-offset-color: #fff;
   --chakra-ring-color: rgba(66, 153, 225, 0.6);
@@ -197,7 +198,7 @@
   --ck-colors-surface-400: #575757;
   --ck-colors-surface-500: #717171;
   --ck-colors-surface-600: #8b8b8b;
-  --ck-colors-primary-standard-500: #c63b0e;
+  --ck-colors-primary-0: #c63b0e;
   --ck-colors-primary-50: #FEF4F1;
   --ck-colors-primary-100: #FDE5DE;
   --ck-colors-primary-200: #FAC8B8;
@@ -209,6 +210,7 @@
   --ck-colors-primary-900: #5B1B06;
   --ck-colors-primary-950: #471605;
   --ck-colors-primary-standard-500: #C63B0E;
+  --ck-colors-secondary-50: #faf6f3;
   --ck-borders-none: 0;
   --ck-borders-1px: 1px solid;
   --ck-borders-2px: 2px solid;

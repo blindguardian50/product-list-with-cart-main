@@ -3,15 +3,52 @@ import {extendTheme} from "@chakra-ui/react"
 const baseFontSize = 1
 const baseSpaceUnit = 1
 
+const space = {
+  px: '1px',
+  0.5: `${0.125 * baseSpaceUnit}rem`,
+  1: `${0.25 * baseSpaceUnit}rem`,
+  1.5: `${0.375 * baseSpaceUnit}rem`,
+  2: `${0.5 * baseSpaceUnit}rem`,
+  2.5: `${0.625 * baseSpaceUnit}rem`,
+  3: `${0.75 * baseSpaceUnit}rem`,
+  3.5: `${0.875 * baseSpaceUnit}rem`,
+  4: `${baseSpaceUnit}rem`,
+  5: `${1.25 * baseSpaceUnit}rem`,
+  6: `${1.5 * baseSpaceUnit}rem`,
+  7: `${1.75 * baseSpaceUnit}rem`,
+  8: `${2 * baseSpaceUnit}rem`,
+  9: `${2.25 * baseSpaceUnit}rem`,
+  10: `${2.5 * baseSpaceUnit}rem`,
+  12: `${3 * baseSpaceUnit}rem`,
+  14: `${3.5 * baseSpaceUnit}rem`,
+  16: `${4 * baseSpaceUnit}rem`,
+  20: `${5 * baseSpaceUnit}rem`,
+  24: `${6 * baseSpaceUnit}rem`,
+  28: `${7 * baseSpaceUnit}rem`,
+  32: `${8 * baseSpaceUnit}rem`,
+  36: `${9 * baseSpaceUnit}rem`,
+  40: `${10 * baseSpaceUnit}rem`,
+  44: `${11 * baseSpaceUnit}rem`,
+  48: `${12 * baseSpaceUnit}rem`,
+  52: `${13 * baseSpaceUnit}rem`,
+  56: `${14 * baseSpaceUnit}rem`,
+  60: `${15 * baseSpaceUnit}rem`,
+  64: `${16 * baseSpaceUnit}rem`,
+  72: `${18 * baseSpaceUnit}rem`,
+  80: `${20 * baseSpaceUnit}rem`,
+  96: `${24 * baseSpaceUnit}rem`,
+}
+
 // 2. Call `extendTheme` and pass your custom values
 export const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        fontFamily: `'RedHat', sans-serif`, // Set your custom font family
-      },
-    },
-  },
+  // styles: {
+  //   global: {
+  //     // body: {
+  //     //   fontFamily: `'RedHat', sans-serif`, // Set your custom font family
+  //     //   // bg: ''
+  //     // },
+  //   },
+  // },
 
   breakpoints: {
     base: '0em',
@@ -44,6 +81,9 @@ export const theme = extendTheme({
       800: "#812709",
       900: "#5B1B06",
       950: "#471605"
+    },
+    secondary: {
+      50: '#faf6f3'
     }
   },
   fontSizes: {
@@ -97,40 +137,32 @@ export const theme = extendTheme({
     wider: "0.05em",
     widest: "0.1em",
   },
-  space: {
-    px: '1px',
-    0.5: `${0.125 * baseSpaceUnit}rem`,
-    1: `${0.25 * baseSpaceUnit}rem`,
-    1.5: `${0.375 * baseSpaceUnit}rem`,
-    2: `${0.5 * baseSpaceUnit}rem`,
-    2.5: `${0.625 * baseSpaceUnit}rem`,
-    3: `${0.75 * baseSpaceUnit}rem`,
-    3.5: `${0.875 * baseSpaceUnit}rem`,
-    4: `${baseSpaceUnit}rem`,
-    5: `${1.25 * baseSpaceUnit}rem`,
-    6: `${1.5 * baseSpaceUnit}rem`,
-    7: `${1.75 * baseSpaceUnit}rem`,
-    8: `${2 * baseSpaceUnit}rem`,
-    9: `${2.25 * baseSpaceUnit}rem`,
-    10: `${2.5 * baseSpaceUnit}rem`,
-    12: `${3 * baseSpaceUnit}rem`,
-    14: `${3.5 * baseSpaceUnit}rem`,
-    16: `${4 * baseSpaceUnit}rem`,
-    20: `${5 * baseSpaceUnit}rem`,
-    24: `${6 * baseSpaceUnit}rem`,
-    28: `${7 * baseSpaceUnit}rem`,
-    32: `${8 * baseSpaceUnit}rem`,
-    36: `${9 * baseSpaceUnit}rem`,
-    40: `${10 * baseSpaceUnit}rem`,
-    44: `${11 * baseSpaceUnit}rem`,
-    48: `${12 * baseSpaceUnit}rem`,
-    52: `${13 * baseSpaceUnit}rem`,
-    56: `${14 * baseSpaceUnit}rem`,
-    60: `${15 * baseSpaceUnit}rem`,
-    64: `${16 * baseSpaceUnit}rem`,
-    72: `${18 * baseSpaceUnit}rem`,
-    80: `${20 * baseSpaceUnit}rem`,
-    96: `${24 * baseSpaceUnit}rem`,
+  space,
+  sizes: {
+    ...space,
+    max: 'max-content',
+    min: 'min-content',
+    full: '100%',
+    '3xs': '14rem',
+    '2xs': '16rem',
+    xs: '20rem',
+    sm: '24rem',
+    md: '28rem',
+    lg: '32rem',
+    xl: '36rem',
+    '2xl': '42rem',
+    '3xl': '48rem',
+    '4xl': '56rem',
+    '5xl': '64rem',
+    '6xl': '72rem',
+    '7xl': '80rem',
+    '8xl': '90rem',
+    container: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
   },
   borderRadius: {
     radii: {

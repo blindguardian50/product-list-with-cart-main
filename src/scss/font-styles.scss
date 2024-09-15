@@ -1,26 +1,24 @@
 .section-heading {
-  --max_font: var(--ck-fontSizes-4xl);
-  --min_font: var(--ck-fontSizes-4xl);
+  --max_font: var(--ck-fontSizes-3xl);
+  --min_font: var(--ck-fontSizes-3xl);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: var(--ck-fontWeights-bold);
   margin-bottom: var(--ck-space-6);
 }
 
-.font-pale-small, .shopping-card__category {
-  --max_font: var(--ck-fontSizes-sm);
-  --min_font: var(--ck-fontSizes-sm);
-  color: var(--ck-colors-blackAlpha-600);
+//group by color; order by size
+
+//----------------------- primary
+.font-w-700-xl-primary, .cart__title {
+  --max_font: var(--ck-fontSizes-xl);
+  --min_font: var(--ck-fontSizes-xl);
+  color: var(--ck-colors-primary-standard-500);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 700;
 }
 
-.font-thick-middle, .shopping-card__name, .shopping-card__button--unselected {
-  --max_font: var(--ck-fontSizes-md);
-  --min_font: var(--ck-fontSizes-md);
-  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
-  font-weight: 500;
-}
-
-.font-thick-middle-primary, .shopping-card__price {
+.font-thick-md-primary,
+.shopping-card__price, {
   --max_font: var(--ck-fontSizes-md);
   --min_font: var(--ck-fontSizes-md);
   color: var(--ck-colors-primary-standard-500);
@@ -28,32 +26,61 @@
   font-weight: 500;
 }
 
-//.section-heading-label {
-//  --max_font: calc(3.75 * var(--font-size-base));
-//  --min_font: calc(1.5 * var(--font-size-base));
-//  //font-size: var(--max_font);
-//  font-size: clamp(var(--min_font), var(--min_font) + 1.5vw, var(--max_font));
-//  text-transform: uppercase;
-//  line-height: normal;
-//}
-//
-//.section-subtitle {
-//  font-size: calc(1.875 * var(--font-size-base));
-//  line-height: 1;
-//}
-//
-//.nav-text {
-//  font-size: calc(1.875 * var(--font-size-base));
-//  line-height: normal;
-//}
-//
-//.body-text {
-//  font-size: calc(1.25 * var(--font-size-base));
-//}
-//
-//.supplement-text {
-//  font-size: calc(0.75 * var(--font-size-base));
-//}
+.font-thick-sm-primary,
+.cart__selected {
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
+  color: var(--ck-colors-primary-standard-500);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
 
 
+//----------------------- pale
+.font-pale-sm-w-500,
+.cart__price-total {
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
+  color: var(--ck-colors-blackAlpha-600);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
 
+.font-pale-sm,
+.shopping-card__category,
+.cart__price-piece,
+.cart-modal__heading-add {
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
+  color: var(--ck-colors-blackAlpha-600);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+}
+
+
+//----------------------- black
+
+.font-w-700-xl-black, .cart__sum__total {
+  --max_font: var(--ck-fontSizes-xl);
+  --min_font: var(--ck-fontSizes-xl);
+  color: var(--ck-colors-black);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 700;
+}
+
+.font-thick-md,
+.shopping-card__name,
+.shopping-card__button--unselected,
+.cart__list .list-item__name {
+  --max_font: var(--ck-fontSizes-md);
+  --min_font: var(--ck-fontSizes-md);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
+
+.font-thick-sm,
+.cart__list .list-item__name {
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}

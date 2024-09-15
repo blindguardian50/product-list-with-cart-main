@@ -1,0 +1,10 @@
+.button--primary {
+  padding: 0.5em 1.5em;
+  border-radius: var(--ck-radii-full);
+  background: var(--ck-colors-primary-standard-500);
+  color: var(--ck-colors-white);
+  transition: filter 0.05s linear;
+  &:active {
+    filter: brightness(0.8);
+  }
+}

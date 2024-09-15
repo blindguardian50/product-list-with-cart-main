@@ -1,0 +1,14 @@
+@use "reset.scss";
+@use "custom-reset";
+@use "fonts";
+@use "font-styles";
+@use "container";
+@use "button";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ck-colors-secondary-50);
+}
