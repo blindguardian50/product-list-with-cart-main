@@ -6,7 +6,6 @@ import {Cart} from "../components/specific/Cart/Cart.tsx";
 import {DessertWrapper} from "../context/DessertContext/DessertContext.tsx";
 
 const queryClient = new QueryClient()
-//test
 
 function App() {
   return (
