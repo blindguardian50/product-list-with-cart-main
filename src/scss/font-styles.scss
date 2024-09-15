@@ -17,19 +17,19 @@
   font-weight: 700;
 }
 
-.font-thick-md-primary,
+.font-thick-sm-primary,
 .shopping-card__price, {
-  --max_font: var(--ck-fontSizes-md);
-  --min_font: var(--ck-fontSizes-md);
+  --max_font: var(--ck-fontSizes-sm);
+  --min_font: var(--ck-fontSizes-sm);
   color: var(--ck-colors-primary-standard-500);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
 }
 
-.font-thick-sm-primary,
+.font-thick-xs-primary,
 .cart__selected {
-  --max_font: var(--ck-fontSizes-sm);
-  --min_font: var(--ck-fontSizes-sm);
+  --max_font: var(--ck-fontSizes-xs);
+  --min_font: var(--ck-fontSizes-xs);
   color: var(--ck-colors-primary-standard-500);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
@@ -37,21 +37,21 @@
 
 
 //----------------------- pale
-.font-pale-sm-w-500,
+.font-pale-xs-w-500,
 .cart__price-total {
-  --max_font: var(--ck-fontSizes-sm);
-  --min_font: var(--ck-fontSizes-sm);
+  --max_font: var(--ck-fontSizes-xs);
+  --min_font: var(--ck-fontSizes-xs);
   color: var(--ck-colors-blackAlpha-600);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
 }
 
-.font-pale-sm,
+.font-pale-xs,
 .shopping-card__category,
 .cart__price-piece,
 .cart-modal__heading-add {
-  --max_font: var(--ck-fontSizes-sm);
-  --min_font: var(--ck-fontSizes-sm);
+  --max_font: var(--ck-fontSizes-xs);
+  --min_font: var(--ck-fontSizes-xs);
   color: var(--ck-colors-blackAlpha-600);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
 }
@@ -59,7 +59,8 @@
 
 //----------------------- black
 
-.font-w-700-xl-black, .cart__sum__total {
+.font-w-700-xl-black,
+.cart__sum__total {
   --max_font: var(--ck-fontSizes-xl);
   --min_font: var(--ck-fontSizes-xl);
   color: var(--ck-colors-black);
@@ -67,20 +68,29 @@
   font-weight: 700;
 }
 
-.font-thick-md,
-.shopping-card__name,
-.shopping-card__button--unselected,
-.cart__list .list-item__name {
-  --max_font: var(--ck-fontSizes-md);
-  --min_font: var(--ck-fontSizes-md);
-  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
-  font-weight: 500;
-}
-
 .font-thick-sm,
-.cart__list .list-item__name {
+.shopping-card__name,
+.shopping-card__button--unselected {
   --max_font: var(--ck-fontSizes-sm);
   --min_font: var(--ck-fontSizes-sm);
   font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
   font-weight: 500;
+}
+
+.font-thick-xs,
+.cart__list--removable .list-item__name,
+.cart__list--overview .list-item__name,
+.cart__list--overview .list-item__info {
+  --max_font: var(--ck-fontSizes-xs);
+  --min_font: var(--ck-fontSizes-xs);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
+  font-weight: 500;
+}
+
+.font-xs-black,
+.cart__sum {
+  --max_font: var(--ck-fontSizes-xs);
+  --min_font: var(--ck-fontSizes-xs);
+  color: var(--ck-colors-black);
+  font-size: clamp(var(--min_font), var(--min_font) + 1vw, var(--max_font));
 }

@@ -18,8 +18,9 @@
     display: flex;
     align-items: center;
     width: max-content;
+    min-width: var(--ck-sizes-40);
     align-self: center;
-    padding: 0.5em 1.5em;
+    padding: 0.6em 1.5em;
     gap: var(--ck-space-2);
     border-radius: var(--ck-radii-full);
     border: var(--ck-borders-1px) var(--ck-colors-blackAlpha-400);
@@ -42,7 +43,10 @@
     &.shopping-card__button--selected {
       background: var(--ck-colors-primary-standard-500);
       color: var(--ck-colors-white);
+      padding: 0.58em 1.5em;
       svg {
+        width: 1.5em;
+        height: 1.5em;
         line, circle { transition: stroke 400ms ease, fill 400ms linear; }
         &:active line { stroke: var(--ck-colors-primary-standard-500); }
         &:active circle { fill: var(--ck-colors-white); }
@@ -56,12 +60,12 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .shopping-card .shopping-card__button--selected {
-    svg:hover line { stroke: var(--ck-colors-primary-standard-500); }
-    svg:hover circle { fill: var(--ck-colors-white); }
+.shopping-card .shopping-card__button--selected button:hover, .shopping-card .shopping-card__button--selected button:focus {
+    line { stroke: var(--ck-colors-primary-standard-500); }
+    circle { fill: var(--ck-colors-white); }
   }
   .shopping-card .shopping-card__button--unselected {
-    &:hover {
+    &:hover, &:focus {
       color: var(--ck-colors-primary-standard-500);
       border: var(--ck-borders-2px) var(--ck-colors-primary-300);
     }

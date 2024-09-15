@@ -1,10 +1,18 @@
 .button--primary {
-  padding: 0.5em 1.5em;
+  padding: 1em 1.5em;
+  font-size: var(--ck-fontSizes-sm);
+  font-weight: 500;
   border-radius: var(--ck-radii-full);
   background: var(--ck-colors-primary-standard-500);
   color: var(--ck-colors-white);
   transition: filter 0.05s linear;
   &:active {
+    filter: brightness(0.8);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button--primary:hover, .button--primary:focus {
     filter: brightness(0.8);
   }
 }

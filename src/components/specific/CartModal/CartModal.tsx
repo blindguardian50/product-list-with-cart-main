@@ -1,18 +1,8 @@
-import {
-  Button, List,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  useDisclosure
-} from "@chakra-ui/react";
-import {FaRegCircleCheck} from "react-icons/fa6";
+import {List, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay} from "@chakra-ui/react";
+import OrderConfirmedIcon from '../../../../assets/images/icon-order-confirmed.svg'
 import './CartModal.css'
 import {useDessertContext} from "../../../context/DessertContext/useDessertContext.tsx";
 import {getSelectedDessertData} from "../../../context/DessertContext/getSelectedDessertData.tsx";
-import {ListItemRemovable} from "../../reusable/ListItemRemovable/ListItemRemovable.tsx";
 import {ListItemOverview} from "../../reusable/ListItemOverview/ListItemOverview.tsx";
 
 type CartModalProps = {
@@ -21,8 +11,8 @@ type CartModalProps = {
 }
 
 export const CartModal = (props: CartModalProps) => {
-  const {isOpen, onClose} = props
-  const {selectedDessertMap, dessertsQuery, imageUrls} = useDessertContext()
+  const {isOpen, onClose: closeModal} = props
+  const {selectedDessertMap, dessertsQuery, imageUrls, setSelectedDessertMap} = useDessertContext()
   const {isPending, error, data} = dessertsQuery
 
   if (isPending) return 'Loading...'
@@ -34,12 +24,21 @@ export const CartModal = (props: CartModalProps) => {
 
   const {selectedDesserts, sumFormatted} = getSelectedDessertData(dessertsWithImgUrls, selectedDessertMap)
 
+  const onClose = () => {
+    setSelectedDessertMap(prev => {
+      const newMap = {...prev}
+      Object.keys(newMap).forEach(key => newMap[key] = 0)
+      return newMap
+    })
+    closeModal()
+  }
+
   return (
-    <Modal isOpen={isOpen} onClose={onClose} isCentered={true}>
+    <Modal isOpen={isOpen} onClose={closeModal} isCentered={true}>
       <ModalOverlay />
       <ModalContent className={'cart-modal'}>
         <ModalHeader>
-          <FaRegCircleCheck />
+          <img src={OrderConfirmedIcon} alt=""/>
         </ModalHeader>
         {/*<ModalCloseButton />*/}
         <ModalBody>
@@ -56,7 +55,7 @@ export const CartModal = (props: CartModalProps) => {
                   <p className={'cart__selected'}>{item.selected}x</p>
                   <p className={'cart__price-piece'}>@{item.priceFormatted}</p>
                 </>}
-                info={<p className={'cart__price-total'}>{item.priceTotalFormatted}</p>}/>
+                info={<p>{item.priceTotalFormatted}</p>}/>
               )}
             </List>
             <div className="cart__sum">

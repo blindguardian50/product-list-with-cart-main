@@ -17,7 +17,7 @@
   .list-item__remove {
     grid-area: list-remove;
     svg {
-      color: var(--ck-colors-blackAlpha-600);
+      color: var(--ck-colors-blackAlpha-500);
       height: var(--ck-sizes-5);
       width: auto;
       transition: color 100ms linear;
@@ -30,4 +30,5 @@
 
 @media (hover: hover) and (pointer: fine) {
   .list-item__remove svg:hover { color: var(--ck-colors-black); }
+  .list-item__remove svg:focus     { color: var(--ck-colors-black); }
 }

@@ -4,7 +4,7 @@
 
 
 .container--xl {
-  max-width: var(--ck-sizes-6xl);
+  max-width: var(--ck-sizes-7xl);
   width: 100%;
   padding-inline: var(--ck-space-4);
 }
@@ -21,10 +21,3 @@
   width: 100%;
   padding-inline: var(--ck-space-4);
 }
-
-@media screen and (min-width: 48em) {
-  .container--xl {
-    padding-inline: var(--ck-space-8);
-  }
-}
-

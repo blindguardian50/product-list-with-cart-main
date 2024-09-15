@@ -1,7 +1,7 @@
 import {extendTheme} from "@chakra-ui/react"
 
-const baseFontSize = 1
-const baseSpaceUnit = 1
+const baseFontSize = 1.1
+const baseSpaceUnit = 1.1
 
 const space = {
   px: '1px',
@@ -158,10 +158,10 @@ export const theme = extendTheme({
     '7xl': '80rem',
     '8xl': '90rem',
     container: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      sm: `${640 * baseSpaceUnit}px`,
+      md: `${768 * baseSpaceUnit}px`,
+      lg: `${1024 * baseSpaceUnit}px`,
+      xl: `${1280 * baseSpaceUnit}px`,
     },
   },
   borderRadius: {

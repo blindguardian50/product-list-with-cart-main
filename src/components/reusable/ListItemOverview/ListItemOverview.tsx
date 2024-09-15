@@ -15,6 +15,6 @@ export const ListItemOverview = (props: ListItemProps) => {
     <div className={'list-item__img-wrapper'}>{image}</div>
     <h3 className={'list-item__name'}>{name}</h3>
     <div className={'list-item__details'}>{details}</div>
-    <button className={'list-item__info'}>{info}</button>
+    <div className={'list-item__info'}>{info}</div>
   </li>
 }

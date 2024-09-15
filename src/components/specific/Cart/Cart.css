@@ -5,8 +5,14 @@
   background: var(--ck-colors-white);
   gap: var(--ck-space-6);
   align-self: center;
+  border-radius: var(--ck-radii-xl);
   &.container--sm {
     padding: var(--ck-space-6);
+  }
+  .cart__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .cart__sum {
     display: flex;
@@ -21,9 +27,10 @@
     padding: var(--ck-space-4);
     border-radius: var(--ck-radii-xl);
     gap: var(--ck-space-1);
+    font-size: var(--ck-fontSizes-sm);
     span { font-weight: 500; }
     img {
-      height: 2em;
+      height: 1.5em;
     }
   }
   .cart__button {

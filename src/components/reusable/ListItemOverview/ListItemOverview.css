@@ -32,15 +32,7 @@
   }
   .list-item__info {
     grid-area: list-info;
-    svg {
-      color: var(--ck-colors-blackAlpha-600);
-      height: var(--ck-sizes-5);
-      width: auto;
-      transition: color 100ms linear;
-      &:active {
-        color: var(--ck-colors-black);
-      }
-    }
+    place-self: center;
   }
 }
 
