@@ -1,5 +1,4 @@
-import {MouseEventHandler, ReactNode} from "react";
-import {IoMdCloseCircleOutline} from "react-icons/io";
+import {ReactNode} from "react";
 import './ListItemOverview.css'
 
 type ListItemProps = {

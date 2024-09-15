@@ -1,11 +1,11 @@
 import {useDessertContext} from "../../../context/DessertContext/useDessertContext.tsx";
 import './Cart.css'
-import CarbonNeutralIcon from '../../../../assets/images/icon-carbon-neutral.svg'
+import CarbonNeutralIcon from '../../../../public/assets/images/icon-carbon-neutral.svg'
 import {ListItemRemovable} from "../../reusable/ListItemRemovable/ListItemRemovable.tsx";
 import {List, useDisclosure} from "@chakra-ui/react";
 import {CartModal} from "../CartModal/CartModal.tsx";
 import {getSelectedDessertData} from "../../../context/DessertContext/getSelectedDessertData.tsx";
-import CartPlaceHolder from '../../../../assets/images/illustration-empty-cart.svg'
+import CartPlaceHolder from '../../../../public/assets/images/illustration-empty-cart.svg'
 
 export const Cart = () => {
   const {selectedDessertMap, dessertsQuery, setSelectedDessertMap} = useDessertContext()

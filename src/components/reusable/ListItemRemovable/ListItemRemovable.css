@@ -29,6 +29,6 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .list-item__remove svg:hover { color: var(--ck-colors-black); }
-  .list-item__remove svg:focus     { color: var(--ck-colors-black); }
+  .list-item__remove:hover svg { color: var(--ck-colors-black); }
+  .list-item__remove:focus svg { color: var(--ck-colors-black); }
 }

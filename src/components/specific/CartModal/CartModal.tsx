@@ -1,5 +1,5 @@
 import {List, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay} from "@chakra-ui/react";
-import OrderConfirmedIcon from '../../../../assets/images/icon-order-confirmed.svg'
+import OrderConfirmedIcon from '../../../../public/assets/images/icon-order-confirmed.svg'
 import './CartModal.css'
 import {useDessertContext} from "../../../context/DessertContext/useDessertContext.tsx";
 import {getSelectedDessertData} from "../../../context/DessertContext/getSelectedDessertData.tsx";

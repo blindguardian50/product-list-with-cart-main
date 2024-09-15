@@ -6,8 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: true, // Ensure source maps are enabled
+    outDir: 'dist'
   },
-  server: {
-    sourcemap: true, // Enable source maps in development mode
-  },
+  publicDir: 'public',
 })

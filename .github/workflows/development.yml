@@ -1,0 +1,38 @@
+# Name of workflow
+name: Development workflow
+
+# When workflow is triggered
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+# Jobs to carry out
+jobs:
+  deploy:
+    # Operating system to run job on
+    runs-on: ubuntu-latest
+
+    # Steps in job
+    steps:
+      # Get code from repo
+      - name: Checkout code
+        uses: actions/checkout@v1
+      # Install NodeJS
+      - name: Use Node.js 18.17
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.17
+      # Run npm install and build on our code
+      - run: npm install
+      - run: npm run build
+      # Deploy self-contained examples to Netlify
+      - name: Deploy self contained
+        uses: netlify/actions/cli@375963b92b795c7b979927c580dd6f2a65ebcf28
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.GENERAL_DEPLOY }}
+          NETLIFY_SITE_ID: ${{ secrets.SITE_ID }}
+        with:
+          args: deploy --dir=dist
+          secrets: '["GENERAL_DEPLOY", "SITE_ID"]'
