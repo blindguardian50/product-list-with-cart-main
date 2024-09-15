@@ -6,6 +6,7 @@
   "homepage": "https://davids-product-list-with-cart.netlify.app",
   "scripts": {
     "dev": "vite",
+    "clean": "rm -r -f dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
